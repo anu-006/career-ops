@@ -1,0 +1,27 @@
+{
+  "model_name": "Career-Ops Skill Predictor (Retrained & Optimized)",
+  "dataset": "keerthanshetty/resume-skill-extractor-dataset",
+  "architecture": "Sublinear TF-IDF (8000 ngrams) -> Class-Balanced Neural / Logistic Predictor",
+  "num_features": 8000,
+  "num_target_skills": 365,
+  "min_frequency_cutoff": 10,
+  "optimal_threshold": 0.5,
+  "training_samples": 2075,
+  "validation_samples": 445,
+  "test_samples": 445,
+  "baseline_comparison": {
+    "baseline_micro_recall": 0.37,
+    "improved_micro_recall": 0.6121481481481481,
+    "baseline_micro_f1": 0.4538,
+    "improved_micro_f1": 0.582546172282532,
+    "baseline_macro_f1": 0.0567,
+    "improved_macro_f1": 0.34603416136084336
+  },
+  "test_evaluation": {
+    "micro_precision": 0.5556750941366326,
+    "micro_recall": 0.6121481481481481,
+    "micro_f1": 0.582546172282532,
+    "macro_f1": 0.34603416136084336,
+    "hamming_loss": 0.01822995228567031
+  }
+}
